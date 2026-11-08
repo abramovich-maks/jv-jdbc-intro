@@ -7,7 +7,8 @@ import java.util.Properties;
 
 public class ConnectionUtil {
 
-    public static final String DB_URL = "jdbc:mysql://localhost:3306/" + System.getenv("DB_SCHEMA");
+    public static final String DB_URL = "jdbc:mysql://localhost:3306/"
+            + System.getenv("DB_SCHEMA") + "?serverTimezone=UTC";
     private static final Properties DB_PROPERTIES;
 
     static {

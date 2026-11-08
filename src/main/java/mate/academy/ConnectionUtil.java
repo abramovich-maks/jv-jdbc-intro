@@ -7,8 +7,8 @@ import java.util.Properties;
 
 public class ConnectionUtil {
 
-    private static final Properties DB_PROPERTIES;
     public static final String DB_URL = "jdbc:mysql://localhost:3306/" + System.getenv("DB_SCHEMA");
+    private static final Properties DB_PROPERTIES;
 
     static {
         DB_PROPERTIES = new Properties();
